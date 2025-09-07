@@ -86,7 +86,8 @@ export default function Hero() {
                     </div>
                 </div>
                 <div>
-                    <Video />
+                    <video />
+                    {/* <Video /> */}
                 </div>
             </div>
         </div>

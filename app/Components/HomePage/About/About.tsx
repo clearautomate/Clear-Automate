@@ -12,19 +12,19 @@ export default function About() {
                 <PulseDot>
                     <p>
                         <span className={styles.text}>
-                            I’m just getting started, and I want to be upfront — <span className={styles.boldText}>it’s just me</span> behind this agency.
+                            I’m just getting started — <span className={styles.boldText}>it’s just me</span> behind this agency.
                         </span>
                         <br /><br />
                         <span className={styles.text}>
-                            I’ve been programming for <span className={styles.boldText}>5 years</span> and specialize in tools like <span className={styles.boldText}>Next.js, API integration, and database-backed systems</span>. After helping my first business, I realized the real impact the right software can have — and now <span className={styles.highlightedText}>I’m all in.</span>
+                            I’ve been programming for <span className={styles.boldText}>5 years</span>, specializing in <span className={styles.boldText}>Next.js, APIs, and database systems</span>. After my first project, I realized the impact the right software can have — <span className={styles.highlightedText}>I’m all in.</span>
                         </span>
                         <br /><br />
                         <span className={styles.text}>
-                            The difference between me and other agencies is I <span className={styles.boldText}>don’t disappear</span> after delivery — <span className={styles.highlightedText}>I handle maintenance, updates, and improvements</span> so your tools keep working as your <span className={styles.boldText}>business grows.</span>
+                            Unlike other agencies, I <span className={styles.boldText}>stay involved</span> — <span className={styles.highlightedText}>handling updates and improvements</span> so your tools grow with your <span className={styles.boldText}>business.</span>
                         </span>
                         <br /><br />
                         <span className={styles.text}>
-                            <span className={styles.highlightedText}>My goal is simple:</span> streamline your operations so you can focus on what matters. If you're interested, <span className={styles.boldText}>I'm currently open to new projects.</span>
+                            <span className={styles.highlightedText}>My goal:</span> streamline operations so you can focus on what matters. <span className={styles.boldText}>Open to new projects.</span>
                         </span>
                     </p>
                 </PulseDot >
