@@ -1,5 +1,6 @@
 import { ClockIcon } from '@heroicons/react/24/outline';
 import styles from './contact.module.css'
+import Image from 'next/image';
 
 export default function Contact() {
     return (
@@ -8,7 +9,7 @@ export default function Contact() {
                 <h2>Let's Get Started!</h2>
                 <div className={styles.me}>
                     <div className={styles.active}>
-                        <img src='https://i0.wp.com/www.commercialphotographynorthwestblog.co.uk/wp-content/uploads/2020/10/MDH_8729webqualitysquare.jpg?resize=560%2C560&ssl=1' />
+                        <Image className={styles.proflie} src={'/profile.png'} alt='profile' width={128} height={128}/>
                     </div>
                     <div className={styles.activeText}>
                         <p>

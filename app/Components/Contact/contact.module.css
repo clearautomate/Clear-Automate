@@ -21,9 +21,10 @@
 
 }
 
-.active img {
+.proflie {
     border-radius: 8rem;
-    width: 100%;
+    width: 64px;
+    height: 64px;
 }
 
 .me {
@@ -40,12 +41,12 @@
 .active::after {
     content: '';
     position: absolute;
-    right: 0.25rem;
-    bottom: 0.75rem;
-    width: 0.6rem;
-    height: 0.6rem;
+    right: 0.1rem;
+    bottom: 0.5rem;
+    width: 0.65rem;
+    height: 0.65rem;
     background: rgb(var(--success-color));
-    border: 2px solid rgb(var(--text-color));
+    border: 2px solid rgb(var(--foreground));
     border-radius: 4rem;
 }
 

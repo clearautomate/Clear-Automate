@@ -13,6 +13,17 @@
     text-align: left;
 }
 
+.imgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.heroImg {
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
     .layout {
         margin-top: 6rem;
@@ -25,6 +36,10 @@
         letter-spacing: -0.03rem;
         margin-bottom: 1rem;
         text-align: center;
+    }
+
+    .heroImg {
+        width: 75%;
     }
 }
 

@@ -6,6 +6,7 @@ import styles from './hero.module.css'
 import Link from 'next/link'
 import Video from './Video/Video'
 import ReviewsRibbon from '../../ReviewsRibbon/ReviewsRibbon'
+import Image from 'next/image'
 
 const chips = [
     { text: 'Admin dashboards', icon: ChartBarIcon },
@@ -50,6 +51,7 @@ export default function Hero() {
                     <h1 className={styles.title}>
                         <span>I build <span style={{ color: 'rgb(var(--primary-accent))' }}>custom tools</span> that take the <span style={{ color: 'rgb(var(--primary-accent))' }}>headaches</span> out of <span style={{ color: 'rgb(var(--primary-accent))' }}>manual tasks</span>.</span>
                     </h1>
+                    <p>I break down your workflow, pinpoint the tasks slowing you down, and build a custom automated system that eliminates them for good.</p>
                     {/* <div className={styles.chips}>
                         {chips.map(({ text, icon: Icon }) => (
                             <span key={text} className="chip">
@@ -85,9 +87,8 @@ export default function Hero() {
                         </button>
                     </div>
                 </div>
-                <div>
-                    <video />
-                    {/* <Video /> */}
+                <div className={styles.imgWrapper}>
+                    <Image className={styles.heroImg} width={1080} height={1080} src={'/hero-graphic.png'} alt='automation'></Image>
                 </div>
             </div>
         </div>

@@ -35,7 +35,7 @@ export default function Footer() {
                     <p>&bull;</p>
                     <Link href={'terms'} className={styles.link}>Terms and Conditions</Link>
                 </div>
-                <p className={styles.copyright}>©2025 Apex Automations. All rights reserved.</p>
+                <p className={styles.copyright}>©2025 Clear Automate. All rights reserved.</p>
             </div>
         </div>
     )
