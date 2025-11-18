@@ -6,7 +6,7 @@
 
 .title {
     font-size: 3rem;
-    line-height: 1.1;
+    line-height: 1.2;
     font-weight: 900;
     letter-spacing: -0.03rem;
     margin-bottom: 2rem;
@@ -24,14 +24,19 @@
     height: auto;
 }
 
+.subtitle {
+    font-weight: normal;
+    color: rgba(var(--text-color), 0.75);
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
-    .layout {
+    /* .layout {
         margin-top: 6rem;
-    }
+    } */
 
     .title {
         font-size: 2rem;
-        line-height: 1.1;
         font-weight: 900;
         letter-spacing: -0.03rem;
         margin-bottom: 1rem;
@@ -43,7 +48,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.7rem 0.5rem;
-    opacity: 0.65;
 }
 
 .contact {
@@ -109,4 +113,10 @@
 
 .highlightedText {
     background: rgba(255, 215, 0, 0.4);
+}
+
+.reviews {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }

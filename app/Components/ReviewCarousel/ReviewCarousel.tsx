@@ -66,7 +66,7 @@ export default function ReviewsCarousel() {
                     '--medium-star-size': '22px',
                     '--small-star-size': '19px',
                     '--x-small-star-size': '16px',
-                    '--item-maximum-columns': '5',
+                    '--item-maximum-columns': '4',
                     '--heading-text-color': 'rgb(var(--text-color))',
                     '--body-text-color': 'rgb(var(--text-color))',
                     '--scroll-button-icon-color': 'rgb(var(--text-color))',

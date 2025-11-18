@@ -1,7 +1,6 @@
 'use client'
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Area, AreaChart } from 'recharts'
-import { ChartBarIcon, PresentationChartLineIcon, CogIcon, ArrowPathIcon, LinkIcon, Squares2X2Icon, DevicePhoneMobileIcon, ArrowTrendingUpIcon, DocumentTextIcon, UserIcon, FireIcon, ClockIcon } from '@heroicons/react/24/outline'
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
+import { ChartBarIcon, PresentationChartLineIcon, ArrowPathIcon, LinkIcon, Squares2X2Icon, ArrowTrendingUpIcon, DocumentTextIcon, TableCellsIcon } from '@heroicons/react/24/outline'
 import styles from './hero.module.css'
 import Link from 'next/link'
 import Video from './Video/Video'
@@ -9,17 +8,13 @@ import ReviewsRibbon from '../../ReviewsRibbon/ReviewsRibbon'
 import Image from 'next/image'
 
 const chips = [
-    { text: 'Admin dashboards', icon: ChartBarIcon },
-    { text: 'KPI dashboards', icon: PresentationChartLineIcon },
-    // { text: 'Maintenance & support', icon: CogIcon },
     { text: 'Workflow automation', icon: ArrowPathIcon },
+    { text: 'Spreadsheet automation', icon: TableCellsIcon },
     { text: 'API integrations', icon: LinkIcon },
-    { text: 'Real-time visualization', icon: Squares2X2Icon },
-    // { text: 'Mobile-friendly dashboards', icon: DevicePhoneMobileIcon },
+    { text: 'KPI dashboards', icon: Squares2X2Icon },
+    { text: 'Automated reporting', icon: PresentationChartLineIcon },
     { text: 'Performance tracking', icon: ArrowTrendingUpIcon },
-    { text: 'BI reporting', icon: DocumentTextIcon },
-    // { text: 'User permissions', icon: UserIcon },
-]
+];
 
 const data = [
     { month: 'Jan', clv: 120 },
@@ -41,37 +36,50 @@ export default function Hero() {
         <>
             <span className={styles.highlightedText}>Book a free call</span> to see exactly how much time I can save you — <span className={styles.boldText}>no pressure, no commitment</span>
         </>
-    ];
+    ]
 
+    // 🌈 Dynamic Chip Colors
+    const baseHue = 210
+    const hueStep = 360 / chips.length
 
     return (
         <div className="page-width">
             <div className={`grid2 ${styles.layout}`}>
                 <div>
                     <h1 className={styles.title}>
-                        <span>I build <span style={{ color: 'rgb(var(--primary-accent))' }}>custom tools</span> that take the <span style={{ color: 'rgb(var(--primary-accent))' }}>headaches</span> out of <span style={{ color: 'rgb(var(--primary-accent))' }}>manual tasks</span>.</span>
+                        <span>
+                            Save <span style={{ color: 'rgb(var(--primary-accent))' }}>10+ Hours</span> a Week With <span className={styles.highlightedText}>Automation</span>.
+                        </span>
                     </h1>
-                    <p>I break down your workflow, pinpoint the tasks slowing you down, and build a custom automated system that eliminates them for good.</p>
-                    {/* <div className={styles.chips}>
-                        {chips.map(({ text, icon: Icon }) => (
-                            <span key={text} className="chip">
-                                <Icon className={styles.icon} aria-hidden="true" />
-                                {text}
-                            </span>
-                        ))}
-                    </div> */}
-                    <div className={`${styles.offerCard}`}>
-                        {offers.map((text, index) => (
-                            <div className={styles.offerList} key={index}>
-                                <div className={styles.offerCardIcon}>
-                                    <CheckCircleIcon />
-                                </div>
-                                <p>
-                                    <span className={styles.offerText}>{text}</span>
-                                </p>
-                            </div>
-                        ))}
+
+                    <h3 className={styles.subtitle}>
+                        Turn your <span>manual tasks</span> into <span className={styles.boldText}> automated systems</span>.
+                    </h3>
+
+                    {/* 🌈 Chips with custom HSL hue */}
+                    <div className={styles.chips}>
+                        {chips.map(({ text, icon: Icon }, index) => {
+                            const hue = (baseHue + index * hueStep) % 360
+                            const chipColor = `hsl(${hue} 0% 0%)`
+                            const chipBg = `hsl(${hue} 100% 50%)`
+                            const chipBorder = `hsl(${hue} 0% 0%)`
+
+                            return (
+                                <span
+                                    key={text}
+                                    className="chip"
+                                    style={{
+                                        color: chipColor,
+                                        borderColor: chipBorder,
+                                    }}
+                                >
+                                    <Icon className={styles.icon} aria-hidden="true" />
+                                    {text}
+                                </span>
+                            )
+                        })}
                     </div>
+
                     <div className={styles.contact}>
                         <button
                             className={`button-solid ${styles.pulse}`}
@@ -82,13 +90,25 @@ export default function Hero() {
                                     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
                                     window.scrollTo({ top: y, behavior: 'smooth' })
                                 }
-                            }}>
-                            <p>Get Me Started Risk-Free</p>
+                            }}
+                        >
+                            <p>Book My FREE Audit</p>
                         </button>
                     </div>
+
+                    <div className={styles.reviews}>
+                        <ReviewsRibbon />
+                    </div>
                 </div>
+
                 <div className={styles.imgWrapper}>
-                    <Image className={styles.heroImg} width={1080} height={1080} src={'/hero-graphic.png'} alt='automation'></Image>
+                    <Image
+                        className={styles.heroImg}
+                        width={1080}
+                        height={1080}
+                        src={'/hero-graphic.png'}
+                        alt="automation"
+                    />
                 </div>
             </div>
         </div>

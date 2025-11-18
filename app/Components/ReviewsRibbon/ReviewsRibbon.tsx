@@ -8,7 +8,7 @@ export default function ReviewsRibbon() {
         script.onload = () => {
             (window as any).reviewsBadgeRibbon?.("badge-ribbon", {
                 store: "clearautomate.io",
-                size: "medium",
+                size: "small",
                 blackLogo: true,
             });
         };
