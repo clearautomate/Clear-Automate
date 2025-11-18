@@ -3,16 +3,8 @@ import FAQs from "../../FAQs/FAQs";
 export default function FAQsSection() {
     const faqs = [
         {
-            question: "Why are you offering to build for free?",
-            answer: "Because I am a new business and I am looking to build my portfolio.",
-        },
-        {
             question: "What happens if I have issues after you build it?",
             answer: "I will stay with you and make the necessary changes.",
-        },
-        {
-            question: "Do I have to pay if I don't want it?",
-            answer: "No, you only pay if you decide to keep the software I build for you.",
         },
         {
             question: "How long does the development usually take?",

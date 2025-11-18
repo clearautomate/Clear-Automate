@@ -33,6 +33,27 @@ export default function About() {
                         </span> */}
                         <span>Hi, <span className={styles.boldText}>I'm Joel Carmenini</span>, the founder of Clear Automate. I started this company after seeing how many businesses were losing time on manual, repetitive work. With a background in software development, I build automation systems that help companies streamline operations and save hours every week.</span>
                     </p>
+                    <div className={styles.desktopStats}>
+                        <div className={styles.stat}>
+                            <div className={styles.badgeIcon}>
+                                <CheckBadgeIcon />
+                            </div>
+                            <h3><span className={styles.highlightedText}>8+</span> Years Programming Experience</h3>
+                        </div>
+                        <div className={styles.socials}>
+                            <Link className={styles.socialIcon} href={'https://www.linkedin.com/in/joelcarmenini/'} target="_blank" rel="noopener noreferrer">
+                                <FaLinkedinIn />
+                            </Link>
+                            <Link className={styles.socialIcon} href={'mailto:joel@clearautomate.io'} target="_blank" rel="noopener noreferrer">
+                                <FaEnvelope />
+                            </Link>
+                            <Link className={styles.socialIcon} href={'https://www.fiverr.com/joel_carmenini'} target="_blank" rel="noopener noreferrer">
+                                <TbBrandFiverr />
+                            </Link>
+                        </div>
+                    </div>
+                </PulseDot >
+                <div className={styles.mobileStats}>
                     <div className={styles.stat}>
                         <div className={styles.badgeIcon}>
                             <CheckBadgeIcon />
@@ -50,7 +71,7 @@ export default function About() {
                             <TbBrandFiverr />
                         </Link>
                     </div>
-                </PulseDot >
+                </div>
             </div>
         </div>
     )

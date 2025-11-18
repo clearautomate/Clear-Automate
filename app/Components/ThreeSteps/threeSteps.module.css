@@ -34,7 +34,10 @@
     gap: 1rem;
 }
 
-.arrow {}
+.arrow {
+    display: flex;
+    justify-content: center;
+}
 
 .arrow svg {
     color: rgba(var(--text-color), 0.5);
