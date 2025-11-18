@@ -37,7 +37,7 @@ export default function About() {
                         <div className={styles.badgeIcon}>
                             <CheckBadgeIcon />
                         </div>
-                        <h3><span className={styles.highlightedText}>10+</span> Automation Workflows Built</h3>
+                        <h3><span className={styles.highlightedText}>8+</span> Years Programming Experience</h3>
                     </div>
                     <div className={styles.socials}>
                         <Link className={styles.socialIcon} href={'https://www.linkedin.com/in/joelcarmenini/'} target="_blank" rel="noopener noreferrer">

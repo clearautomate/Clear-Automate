@@ -41,8 +41,9 @@
 }
 
 .aboutMe {
-    margin-top: -0.6rem;
-    line-height: 300%;
+    margin-top: -0.8rem;
+    line-height: 250%;
+    font-size: 1.2em;
 }
 
 .stat {
@@ -52,6 +53,7 @@
     text-align: center;
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .stat h3 {

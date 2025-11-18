@@ -1,0 +1,19 @@
+.wrapper {
+    background-color: rgb(var(--text-color));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card {
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+    color: rgba(var(--foreground), 1);
+}
+
+.card p {
+    color: rgba(var(--foreground), 0.8);
+}

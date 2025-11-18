@@ -1,9 +1,12 @@
 .dark {
-    backdrop-filter: blur(100px) brightness(0.8) saturate(0.8) contrast(1) drop-shadow(var(--drop-shadow));
+    background: rgb(var(--text-color));
+    color: rgb(var(--foreground));
+    margin-bottom: 0;
 }
 
 .light {
     background: rgb(var(--foreground));
+    margin-bottom: 0;
 }
 
 .grid li h3 {

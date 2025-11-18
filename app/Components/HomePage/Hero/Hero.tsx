@@ -92,7 +92,7 @@ export default function Hero() {
                                 }
                             }}
                         >
-                            <p>Book My FREE Audit</p>
+                            <p>Book My FREE Audit – Only 3 Spots Left!</p>
                         </button>
                     </div>
 
