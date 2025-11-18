@@ -116,9 +116,12 @@ body {
 
 
 @media (max-width: 1024px) {
-
   .grid2,
   .grid3 {
     grid-template-columns: 1fr;
+  }
+
+  .grid2 {
+    gap: 2rem;
   }
 }
