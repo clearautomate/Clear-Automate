@@ -102,13 +102,15 @@ export default function Hero() {
                 </div>
 
                 <div className={styles.imgWrapper}>
-                    <Image
-                        className={styles.heroImg}
-                        width={1080}
-                        height={1080}
-                        src={'/hero-graphic.png'}
-                        alt="automation"
-                    />
+                    <div className={styles.squareBox}>
+                        <Image
+                            className={styles.heroImg}
+                            width={1080}
+                            height={1080}
+                            src={'/hero-graphic.png'}
+                            alt="automation"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
