@@ -50,11 +50,11 @@ export default function Benefits() {
 
     return (
         <Multicolumn
-            header="Clear Benefits That Drive Growth"
-            subtitle="Tailored solutions to save time, cut costs, and grow your business"
+            header="What Our Clients Get"
+            subtitle="How automation saves time, cuts errors, and boosts ROI."
             cards={cards}
             dark={false}
-            button={{ text: "View My Works", href: "./works" }}
+            // button={{ text: "View My Works", href: "./works" }}
         />
     );
 }

@@ -19,3 +19,53 @@
 .highlightedText {
     background: rgba(255, 215, 0, 0.4);
 }
+
+.socials {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.socialIcon {
+    display: flex;
+    background-color: rgba(var(--text-color), 1);
+    padding: 0.75rem;
+    border-radius: 50px;
+}
+
+.socialIcon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgba(var(--foreground), 1);
+}
+
+.aboutMe {
+    margin-top: -0.6rem;
+    line-height: 300%;
+}
+
+.stat {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(var(--text-color), 0.25);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.stat h3 {
+    font-weight: normal;
+}
+
+.badgeIcon {
+    color: rgb(var(--primary-accent));
+    border-radius: 32px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.highlightedText {
+    background: rgba(255, 215, 0, 0.4);
+    font-weight: bold;
+}

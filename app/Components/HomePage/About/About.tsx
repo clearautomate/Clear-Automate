@@ -1,17 +1,22 @@
+import { FaEnvelope, FaLinkedin, FaLinkedinIn } from 'react-icons/fa6'
 import PulseDot from '../../PulseDot/PulseDot'
 import styles from './about.module.css'
+import Link from 'next/link'
+import { SiFiverr } from 'react-icons/si'
+import { TbBrandFiverr } from 'react-icons/tb'
+import { CheckBadgeIcon } from '@heroicons/react/24/outline'
 
 export default function About() {
     return (
         <div className="page-width section">
             <div className="section-header">
-                <h2>Who am I?</h2>
+                <h2>Meet the Founder</h2>
             </div>
             <div className={`${styles.grid} grid2`}>
-                <img src={'https://img.freepik.com/premium-photo/man-portrait-tablet-with-smile-office-research-networking-stock-market-investment-portfolio-manager-tech-communication-with-clients-proposal-management-corporate-advice_590464-408461.jpg'} />
+                <img src={'/me.jpg'} />
                 <PulseDot>
-                    <p>
-                        <span className={styles.text}>
+                    <p className={styles.aboutMe}>
+                        {/* <span className={styles.text}>
                             I’m just getting started — <span className={styles.boldText}>it’s just me</span> behind this agency.
                         </span>
                         <br /><br />
@@ -25,8 +30,26 @@ export default function About() {
                         <br /><br />
                         <span className={styles.text}>
                             <span className={styles.highlightedText}>My goal:</span> streamline operations so you can focus on what matters. <span className={styles.boldText}>Open to new projects.</span>
-                        </span>
+                        </span> */}
+                        <span>Hi, <span className={styles.boldText}>I'm Joel Carmenini</span>, the founder of Clear Automate. I started this company after seeing how many businesses were losing time on manual, repetitive work. With a background in software development, I build automation systems that help companies streamline operations and save hours every week.</span>
                     </p>
+                    <div className={styles.stat}>
+                        <div className={styles.badgeIcon}>
+                            <CheckBadgeIcon />
+                        </div>
+                        <h3><span className={styles.highlightedText}>10+</span> Automation Workflows Built</h3>
+                    </div>
+                    <div className={styles.socials}>
+                        <Link className={styles.socialIcon} href={'https://www.linkedin.com/in/joelcarmenini/'} target="_blank" rel="noopener noreferrer">
+                            <FaLinkedinIn />
+                        </Link>
+                        <Link className={styles.socialIcon} href={'mailto:joel@clearautomate.io'} target="_blank" rel="noopener noreferrer">
+                            <FaEnvelope />
+                        </Link>
+                        <Link className={styles.socialIcon} href={'https://www.fiverr.com/joel_carmenini'} target="_blank" rel="noopener noreferrer">
+                            <TbBrandFiverr />
+                        </Link>
+                    </div>
                 </PulseDot >
             </div>
         </div>

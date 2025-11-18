@@ -21,7 +21,7 @@ export default function Footer() {
                                 window.scrollTo({ top: y, behavior: 'smooth' })
                             }
                         }}>
-                        Get Started Risk-Free
+                        Book My FREE Audit
                     </button>
                 </div>
                 <div className={styles.websiteLinks}>

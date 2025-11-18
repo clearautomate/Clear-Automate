@@ -51,16 +51,11 @@
 }
 
 .contactBtn {
-    border-radius: 4rem;
     /* height: auto; */
     justify-self: flex-end;
     display: flex;
     align-items: center;
     padding: 0 4rem;
-}
-
-.contactBtn::after {
-    border-radius: 4rem !important;
 }
 
 .links li a::before {

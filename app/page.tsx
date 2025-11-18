@@ -14,10 +14,10 @@ export default function Home() {
     <>
       {/* <Bubble /> */}
       <Hero />
+      <Benifits />
       <ReviewsCarousel />
       {/* <Testimonials /> */}
-      <Benifits />
-      <Free />
+      {/* <Free /> */}
       <About />
       {/* <Services /> */}
       <FAQsSection />

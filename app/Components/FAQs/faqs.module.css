@@ -17,8 +17,7 @@
     align-items: center;
 }
 
-.faqs {
-}
+.faqs {}
 
 .icon {
     width: 1rem;
@@ -31,5 +30,10 @@
 }
 
 .answer {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+.faq {
+    cursor: pointer;
+    padding: 1rem;
 }

@@ -28,7 +28,7 @@ const data = [
 export default function Hero() {
     const offers = [
         <>
-            If you don't save <span className={styles.boldText}>10 hours a week after 7 days</span>, <span className={styles.highlightedText}>I’ll give your money back — plus $100</span>
+            If you don't save <span className={styles.boldText}>10 hours a week after 7 days</span>, <span className={styles.highlightedText}>I'll give your money back — plus $100</span>
         </>,
         <>
             <span className={styles.highlightedText}>Only <span className={styles.boldText}>5 spots</span> available</span> — I'm starting small to give each client my full attention

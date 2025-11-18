@@ -22,7 +22,7 @@ export default function Contact() {
                 <input className="text-input" type="text" placeholder="Name" />
                 <input className="text-input" type="email" placeholder="Email" />
                 <textarea className={`text-input ${styles.textArea}`} rows={4} placeholder="Brief Description" />
-                <button className="button-solid" type="submit">Get Started Risk-Free</button>
+                <button className="button-solid" type="submit">Book My FREE Audit</button>
                 <small>We'll never share your data with anyone.</small>
             </div>
         </form>
