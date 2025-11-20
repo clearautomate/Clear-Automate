@@ -26,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://t.contentsquare.net/uxa/0003f09a28410.js"></script>
+      </head>
       <body className={poppins.variable}>
         <InfoBar />
         <Header />
