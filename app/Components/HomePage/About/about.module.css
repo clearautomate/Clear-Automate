@@ -87,4 +87,8 @@
     .mobileStats {
         display: block;
     }
+
+    .aboutMe {
+        font-size: 1em;
+    }
 }
