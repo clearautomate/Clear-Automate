@@ -8,10 +8,10 @@ export default function Footer() {
     return (
         <div className={`${styles.background} section`}>
             <div className={`${styles.content} page-width`}>
-                <div className={`${styles.header} section-header`}>
-                    <h3>Get your software built, Risk free.</h3>
-                    <p>Streamline your business with tailored automation solutions built just for you.</p>
-                    <button
+                <div className={`${styles.header}`}>
+                    {/* <h3>Get your software built, Risk free.</h3>
+                    <p>Streamline your business with tailored automation solutions built just for you.</p> */}
+                    {/* <button
                         className='button-solid'
                         onClick={() => {
                             const el = document.getElementById('contact')
@@ -22,7 +22,7 @@ export default function Footer() {
                             }
                         }}>
                         Book My FREE Audit
-                    </button>
+                    </button> */}
                 </div>
                 <div className={styles.websiteLinks}>
                     <Link href="/" className={styles.logo}>

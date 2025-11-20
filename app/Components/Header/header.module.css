@@ -115,9 +115,9 @@
         display: none;
     }
 
-    .hamburgerIcon {
+    /* .hamburgerIcon {
         display: block;
-    }
+    } */
 
     .contents {
         display: flex;
