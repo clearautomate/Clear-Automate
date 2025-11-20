@@ -69,3 +69,29 @@
 .jobTitle {
     opacity: 0.85;
 }
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btnSubmited {
+    background: rgb(var(--success-color));
+}
+
+.errorTxt {
+    border: 2px solid rgba(var(--error-color), 0.3);
+    background: rgba(var(--error-color), 0.2);
+    color: rgba(var(--error-color), 1);
+    border-radius: var(--border-radius);
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 0.9em;
+}
+
+.checkIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
