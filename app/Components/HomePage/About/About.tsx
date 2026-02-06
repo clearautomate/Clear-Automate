@@ -13,7 +13,7 @@ export default function About() {
                 <h2>Meet the Founder</h2>
             </div>
             <div className={`${styles.grid} grid2`}>
-                <img src={'/me.png'} />
+                <img src={'webp'} />
                 <PulseDot>
                     <p className={styles.aboutMe}>
                         {/* <span className={styles.text}>
