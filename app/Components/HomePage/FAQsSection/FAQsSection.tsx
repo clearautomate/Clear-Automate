@@ -4,7 +4,7 @@ export default function FAQsSection() {
     const faqs = [
         {
             question: "How do I know automation will actually save my team time?",
-            answer: "Every build is designed to eliminate repetitive work. Most clients save 10+ hours per week instantly with their first automation.",
+            answer: "Every build is designed to eliminate repetitive work. Most real estate teams save 10+ hours per week with their first automation.",
         },
         {
             question: "We’re not a tech-savvy company… will this still work for us?",
@@ -20,7 +20,7 @@ export default function FAQsSection() {
         },
         {
             question: "Is this expensive?",
-            answer: "Clear Automate is structured to deliver fast ROI. Most clients cover the entire cost through saved time and reduced errors within weeks.",
+            answer: "Clear Automate is structured to deliver fast ROI. Most teams cover the entire cost through saved time and reduced errors within weeks.",
         },
         {
             question: "What if we don’t know exactly what needs automating?",

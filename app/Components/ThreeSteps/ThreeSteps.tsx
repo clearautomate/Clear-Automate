@@ -10,19 +10,19 @@ export default function ThreeSteps() {
             number: "01",
             title: "Book your free audit call",
             description:
-                "Tell me about your business, your current tools, and where you’re losing time each week.",
+                "Tell me about your team, your tools, and where you’re losing time each week.",
         },
         {
             number: "02",
             title: "Get a custom automation blueprint",
             description:
-                "I map your workflows, identify quick wins, and design a simple, ROI-focused automation plan.",
+                "I map your lead-to-close workflow, identify quick wins, and design a simple, ROI-focused automation plan.",
         },
         {
             number: "03",
             title: "Launch, refine, and scale",
             description:
-                "I build your automations, connect your tools, and refine everything based on real-world results.",
+                "I build your automations, connect your CRM and listing tools, and refine everything based on real-world results.",
         },
     ]
 
@@ -31,7 +31,7 @@ export default function ThreeSteps() {
             <div className="page-width section">
                 <div className="section-header">
                     <h2>Our Simple Process To Get Started</h2>
-                    <p>Three simple steps to go from manual tasks to fully automated systems.</p>
+                    <p>Three simple steps to go from manual tasks to streamlined real estate systems.</p>
                 </div>
 
                 <div className={styles.grid}>
@@ -63,7 +63,7 @@ export default function ThreeSteps() {
                             }
                         }}
                     >
-                        <p>Book My FREE Audit – Only 3 Spots Left!</p>
+                        <p>Book My FREE Real Estate Audit – Only 3 Spots Left!</p>
                     </button>
                 </div>
             </div>

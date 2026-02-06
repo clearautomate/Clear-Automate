@@ -84,7 +84,7 @@ export default function Contact() {
                 <textarea
                     className={`text-input ${styles.textArea}`}
                     rows={3}
-                    placeholder="Describe your company briefly"
+                    placeholder="Describe your team or brokerage briefly"
                     value={company}
                     onChange={(e) => setCompany(e.target.value)}
                     required
@@ -95,7 +95,7 @@ export default function Contact() {
                     className={`button-solid ${styles.btn} ${success ? styles.btnSubmited : ''}`}
                     disabled={loading || success} // only submit once if success
                 >
-                    {!loading && !success && 'Book My FREE Audit – Only 3 Spots Left!'}
+                    {!loading && !success && 'Book My FREE Real Estate Audit – Only 3 Spots Left!'}
                     {loading && 'Sending...'}
                     {!loading && success && <><CheckCircleIcon className={styles.checkIcon} /> <p>Sent — I'll get back to you shortly!</p></>}
                 </button>

@@ -16,7 +16,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Clear Automate",
-  description: "Automate your workflows",
+  description: "Automate your real estate workflows",
 };
 
 export default function RootLayout({

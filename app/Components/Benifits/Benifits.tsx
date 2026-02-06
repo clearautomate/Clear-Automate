@@ -13,19 +13,19 @@ export default function Benefits() {
         {
             icon: <ClockIcon />,
             title: "Saves Hours Weekly",
-            body: "Automate repetitive workflows so you don’t waste time on manual tasks.",
+            body: "Automate listing and lead workflows so you don’t waste time on manual tasks.",
             color: 45,
         },
         {
             icon: <ArrowPathIcon />,
             title: "Scales Effortlessly",
-            body: "Handle more work without needing to hire or micromanage.",
+            body: "Handle more listings and clients without needing to hire or micromanage.",
             color: 210,
         },
         {
             icon: <ExclamationTriangleIcon />,
             title: "Reduces Errors",
-            body: "Avoid forgotten steps and misplaced info with structured automations.",
+            body: "Avoid missed follow-ups and transaction steps with structured automations.",
             color: 0,
         },
 
@@ -52,7 +52,7 @@ export default function Benefits() {
     return (
         <Multicolumn
             header="What Our Clients Get"
-            subtitle="How automation saves time, cuts errors, and boosts ROI."
+            subtitle="How real estate automation saves time, cuts errors, and boosts ROI."
             cards={cards}
             dark={false}
         />

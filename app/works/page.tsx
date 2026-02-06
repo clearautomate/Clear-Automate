@@ -6,8 +6,8 @@ export default function Page() {
         <div className="page-width">
             <div className='section'>
                 <div className={`section-header ${styles.title}`}>
-                    <h2>Projects That Drive Business Success</h2>
-                    <p>Real-world dashboards and tools designed to streamline workflows and boost performance.</p>
+                    <h2>Projects That Drive Real Estate Success</h2>
+                    <p>Real-world dashboards and tools designed to streamline workflows and boost performance for busy teams.</p>
                 </div>
                 <div className='grid3'>
                     <WorkCard

@@ -12,9 +12,9 @@ const testimonialsData = [
     {
         id: 1,
         name: "Charles",
-        jobTitle: "Project Manager",
+        jobTitle: "Team Lead",
         profilePic: "/profile pic.jpg",
-        text: "Apex Automation helped us cut down hours of manual work with smart, efficient systems. The team was professional, easy to work with, and delivered great results. Highly recommend for anyone looking to streamline their business."
+        text: "Clear Automate helped our real estate team cut down hours of manual work with smart, efficient systems. Professional, easy to work with, and delivered great results."
     }
 ];
 
@@ -94,7 +94,7 @@ export default function Testimonials() {
         <div className="page-width section">
             <div className="section-header">
                 <h2>What My First Clients Are Saying</h2>
-                <p>Genuine feedback from the businesses I've supported</p>
+                <p>Genuine feedback from the teams I've supported</p>
             </div>
             <div className={styles.testimonials}>
                 <button onClick={goPrev} className={styles.slideBtn}>

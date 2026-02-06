@@ -82,8 +82,8 @@ export default function ReviewsCarousel() {
     return (
         <div className='section page-width'>
             <div className='section-header'>
-                <h2>What Businesses Say</h2>
-                <p>Insights from businesses using our automations.</p>
+                <h2>What Real Estate Teams Say</h2>
+                <p>Insights from agents and brokerages using our automations.</p>
             </div>
             <Script
                 src="https://widget.reviews.io/carousel-inline-iframeless/dist.js?_t=2025072216"

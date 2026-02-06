@@ -11,7 +11,7 @@ export default function Free() {
                 <PulseDot>
                     <p>
                         <span className={styles.text}>
-                            As a new business owner, I’m offering to build <span className={styles.boldText}>your service for free</span>. If you like it and it helps you, then you can choose to pay—no obligation.
+                            As a new business owner, I’m offering to build <span className={styles.boldText}>your real estate automation for free</span>. If you like it and it helps you, then you can choose to pay—no obligation.
                         </span>
                         <br /><br />
                         <span className={styles.text}>

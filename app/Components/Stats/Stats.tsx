@@ -6,15 +6,15 @@ export default function Stats() {
         // 🔥 High-Converting Stats (BIG STAT + small text)
         {
             title: "10+",
-            body: "Hours saved per week on average through automation",
+            body: "Hours saved per week on average for busy agents and teams",
         },
         {
             title: "8+",
-            body: "Custom workflows, dashboards, and automations built.",
+            body: "Listing, lead, and transaction workflows built.",
         },
         {
             title: "50%+",
-            body: "Average reduction in manual steps after automation.",
+            body: "Average reduction in manual steps from listing to close.",
         },
     ];
 

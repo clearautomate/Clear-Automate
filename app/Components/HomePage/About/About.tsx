@@ -13,7 +13,7 @@ export default function About() {
                 <h2>Meet the Founder</h2>
             </div>
             <div className={`${styles.grid} grid2`}>
-                <img src={'/me.jpg'} />
+                <img src={'/me.png'} />
                 <PulseDot>
                     <p className={styles.aboutMe}>
                         {/* <span className={styles.text}>
@@ -31,7 +31,7 @@ export default function About() {
                         <span className={styles.text}>
                             <span className={styles.highlightedText}>My goal:</span> streamline operations so you can focus on what matters. <span className={styles.boldText}>Open to new projects.</span>
                         </span> */}
-                        <span>Hi, <span className={styles.boldText}>I'm Joel Carmenini</span>, the founder of Clear Automate. I started this company after seeing how many businesses were losing time on manual, repetitive work. With a background in software development, I build automation systems that help companies streamline operations and save hours every week.</span>
+                        <span>Hi, <span className={styles.boldText}>I'm Joel Carmenini</span>, the founder of Clear Automate. I started this company after seeing how many real estate teams were losing time on manual, repetitive work. With a background in software development, I build automation systems that help agents and brokerages streamline operations and save hours every week.</span>
                     </p>
                     <div className={styles.desktopStats}>
                         <div className={styles.stat}>

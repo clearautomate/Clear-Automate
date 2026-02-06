@@ -58,7 +58,7 @@ www.clearautomate.io
                     </a>
                 </p>
                 <p style="margin:0; font-size:12px; color:#555;">
-                    Automating workflows • Dashboards • Spreadsheets • AI tools
+                    Lead routing • Listing updates • Dashboards • AI tools
                 </p>
             </div>
         </div>

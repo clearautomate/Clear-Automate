@@ -8,12 +8,12 @@ import ReviewsRibbon from '../../ReviewsRibbon/ReviewsRibbon'
 import Image from 'next/image'
 
 const chips = [
-    { text: 'Workflow automation', icon: ArrowPathIcon },
-    { text: 'Spreadsheet automation', icon: TableCellsIcon },
-    { text: 'API integrations', icon: LinkIcon },
-    { text: 'KPI dashboards', icon: Squares2X2Icon },
-    { text: 'Automated reporting', icon: PresentationChartLineIcon },
-    { text: 'Performance tracking', icon: ArrowTrendingUpIcon },
+    { text: 'Lead routing', icon: ArrowPathIcon },
+    { text: 'Listing intake', icon: TableCellsIcon },
+    { text: 'CRM syncing', icon: LinkIcon },
+    { text: 'Pipeline dashboards', icon: Squares2X2Icon },
+    { text: 'Offer tracking', icon: PresentationChartLineIcon },
+    { text: 'Showing follow-ups', icon: ArrowTrendingUpIcon },
 ];
 
 const data = [
@@ -48,12 +48,13 @@ export default function Hero() {
                 <div>
                     <h1 className={styles.title}>
                         <span>
-                            Save <span style={{ color: 'rgb(var(--primary-accent))' }}>10+ Hours</span> a Week With <span className={styles.highlightedText}>Automation</span>.
+                            Automate Your <span style={{ color: 'rgb(var(--primary-accent))' }}>Real Estate</span> <span className={styles.highlightedText}>Business</span>.
                         </span>
                     </h1>
 
                     <h3 className={styles.subtitle}>
-                        Turn your <span>manual tasks</span> into <span className={styles.boldText}> automated systems</span>.
+                        Turn your <span>listing and lead busywork</span> into
+                        <span className={styles.boldText}> automated systems</span>.
                     </h3>
 
                     {/* 🌈 Chips with custom HSL hue */}
@@ -92,7 +93,7 @@ export default function Hero() {
                                 }
                             }}
                         >
-                            <p>Book My FREE Audit – Only 3 Spots Left!</p>
+                            <p>Book My FREE Real Estate Audit – Only 3 Spots Left!</p>
                         </button>
                     </div>
 
@@ -108,7 +109,7 @@ export default function Hero() {
                             width={1080}
                             height={1080}
                             src={'/hero-graphic.png'}
-                            alt="automation"
+                            alt="real estate automation"
                         />
                     </div>
                 </div>

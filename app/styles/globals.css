@@ -43,7 +43,8 @@ body {
 }
 
 ::selection {
-  background-color: yellow;
+  background-color: rgb(255, 255, 0);
+  color: rgb(var(--text-color)) !important;
 }
 
 .page-width {
