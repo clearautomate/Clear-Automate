@@ -2,8 +2,23 @@
     background-color: rgba(var(--primary-accent), 0.1);
 }
 
-.card {}
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2rem 1fr 2rem 1fr;
+    align-items: stretch; /* 🔑 equal height magic */
+    justify-content: center;
+    gap: 1rem;
+}
 
+/* CARD */
+.card {
+    height: 100%;               /* 🔑 fill grid cell */
+    display: flex;
+    flex-direction: column;
+}
+
+/* CARD CONTENT */
 .number {
     background-color: rgba(var(--primary-accent), 1);
     color: rgb(var(--foreground));
@@ -20,23 +35,17 @@
     margin-bottom: 0.5rem;
 }
 
-.contact {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: center;
+/* OPTIONAL: push CTA / footer to bottom */
+.cardContent {
+    flex: 1;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2rem 1fr 2rem 1fr;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
+/* ARROWS BETWEEN CARDS */
 .arrow {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .arrow svg {
@@ -44,12 +53,20 @@
     width: 2rem;
 }
 
+/* CONTACT SECTION */
+.contact {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* MOBILE */
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr;
     }
 
-    .arrow svg {
-        transform: rotateZ(90deg);
+    .arrow {
+        transform: rotate(90deg);
     }
 }

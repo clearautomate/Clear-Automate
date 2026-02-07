@@ -2,6 +2,7 @@
 'use client'
 import { useState } from 'react'
 import Script from 'next/script'
+import { Reveal, RevealGroup } from '../Reveal/Reveal'
 
 declare global {
     interface Window {
@@ -80,18 +81,24 @@ export default function ReviewsCarousel() {
     }
 
     return (
-        <div className='section page-width'>
-            <div className='section-header'>
-                <h2>What Real Estate Teams Say</h2>
-                <p>Insights from agents and brokerages using our automations.</p>
+        <RevealGroup>
+            <div className='section page-width'>
+                <Reveal delay={0}>
+                    <div className='section-header'>
+                        <h2>What Real Estate Teams Say</h2>
+                        <p>Insights from agents and brokerages using our automations.</p>
+                    </div>
+                </Reveal>
+                <Script
+                    src="https://widget.reviews.io/carousel-inline-iframeless/dist.js?_t=2025072216"
+                    strategy="afterInteractive"
+                    onLoad={initWidget}
+                />
+                {!loaded && <p>Loading reviews...</p>}
+                <Reveal delay={0.2}>
+                    <div id="reviewsio-carousel-widget" />
+                </Reveal>
             </div>
-            <Script
-                src="https://widget.reviews.io/carousel-inline-iframeless/dist.js?_t=2025072216"
-                strategy="afterInteractive"
-                onLoad={initWidget}
-            />
-            {!loaded && <p>Loading reviews...</p>}
-            <div id="reviewsio-carousel-widget" />
-        </div>
+        </RevealGroup>
     )
 }

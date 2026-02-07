@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Video from './Video/Video'
 import ReviewsRibbon from '../../ReviewsRibbon/ReviewsRibbon'
 import Image from 'next/image'
+import { Reveal, RevealGroup } from '../../Reveal/Reveal'
 
 const chips = [
     { text: 'Lead routing', icon: ArrowPathIcon },
@@ -43,77 +44,91 @@ export default function Hero() {
     const hueStep = 360 / chips.length
 
     return (
-        <div className="page-width">
-            <div className={`grid2 ${styles.layout}`}>
-                <div>
-                    <h1 className={styles.title}>
-                        <span>
-                            Automate Your <span style={{ color: 'rgb(var(--primary-accent))' }}>Real Estate</span> <span className={styles.highlightedText}>Business</span>.
-                        </span>
-                    </h1>
+        <RevealGroup>
+            <div className="page-width">
+                <div className={`grid2 ${styles.layout}`}>
+                    <div>
+                        <Reveal delay={0}>
+                            <h1 className={styles.title}>
+                                <span>
+                                    Automate Your <span style={{ color: 'rgb(var(--primary-accent))' }}>Real Estate</span> <span className={styles.highlightedText}>Business</span>.
+                                </span>
+                            </h1>
+                        </Reveal>
 
-                    <h3 className={styles.subtitle}>
-                        Turn your <span>listing and lead busywork</span> into
-                        <span className={styles.boldText}> automated systems</span>.
-                    </h3>
+                        <Reveal delay={0.2}>
+                            <h3 className={styles.subtitle}>
+                                Turn your <span>listing and lead busywork</span> into
+                                <span className={styles.boldText}> automated systems</span>.
+                            </h3>
+                        </Reveal>
 
-                    {/* 🌈 Chips with custom HSL hue */}
-                    <div className={styles.chips}>
-                        {chips.map(({ text, icon: Icon }, index) => {
-                            const hue = (baseHue + index * hueStep) % 360
-                            const chipColor = `hsl(${hue} 0% 0%)`
-                            const chipBg = `hsl(${hue} 100% 50%)`
-                            const chipBorder = `hsl(${hue} 0% 0%)`
+                        {/* 🌈 Chips with custom HSL hue */}
+                        <Reveal delay={0.4}>
+                            <div className={styles.chips}>
+                                {chips.map(({ text, icon: Icon }, index) => {
+                                    const hue = (baseHue + index * hueStep) % 360
+                                    const chipColor = `hsl(${hue} 0% 0%)`
+                                    const chipBg = `hsl(${hue} 100% 50%)`
+                                    const chipBorder = `hsl(${hue} 0% 0%)`
 
-                            return (
-                                <span
-                                    key={text}
-                                    className="chip"
-                                    style={{
-                                        color: chipColor,
-                                        borderColor: chipBorder,
+                                    return (
+                                        <span
+                                            key={text}
+                                            className="chip"
+                                            style={{
+                                                color: chipColor,
+                                                borderColor: chipBorder,
+                                            }}
+                                        >
+                                            <Icon className={styles.icon} aria-hidden="true" />
+                                            {text}
+                                        </span>
+                                    )
+                                })}
+                            </div>
+                        </Reveal>
+
+                        <Reveal delay={0.6}>
+                            <div className={styles.contact}>
+                                <button
+                                    className={`button-solid ${styles.pulse}`}
+                                    onClick={() => {
+                                        const el = document.getElementById('contact')
+                                        if (el) {
+                                            const yOffset = -100
+                                            const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
+                                            window.scrollTo({ top: y, behavior: 'smooth' })
+                                        }
                                     }}
                                 >
-                                    <Icon className={styles.icon} aria-hidden="true" />
-                                    {text}
-                                </span>
-                            )
-                        })}
+                                    <p>Book My FREE Real Estate Audit – Only 3 Spots Left!</p>
+                                </button>
+                            </div>
+                        </Reveal>
+
+                        <Reveal delay={0.8}>
+                            <div className={styles.reviews}>
+                                <ReviewsRibbon />
+                            </div>
+                        </Reveal>
                     </div>
 
-                    <div className={styles.contact}>
-                        <button
-                            className={`button-solid ${styles.pulse}`}
-                            onClick={() => {
-                                const el = document.getElementById('contact')
-                                if (el) {
-                                    const yOffset = -100
-                                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
-                                    window.scrollTo({ top: y, behavior: 'smooth' })
-                                }
-                            }}
-                        >
-                            <p>Book My FREE Real Estate Audit – Only 3 Spots Left!</p>
-                        </button>
-                    </div>
-
-                    <div className={styles.reviews}>
-                        <ReviewsRibbon />
-                    </div>
-                </div>
-
-                <div className={styles.imgWrapper}>
-                    <div className={styles.squareBox}>
-                        <Image
-                            className={styles.heroImg}
-                            width={1080}
-                            height={1080}
-                            src={'/hero-graphic.png'}
-                            alt="real estate automation"
-                        />
-                    </div>
+                    <Reveal delay={0.4}>
+                        <div className={styles.imgWrapper}>
+                            <div className={styles.squareBox}>
+                                <Image
+                                    className={styles.heroImg}
+                                    width={1080}
+                                    height={1080}
+                                    src={'/hero-graphic.png'}
+                                    alt="real estate automation"
+                                />
+                            </div>
+                        </div>
+                    </Reveal>
                 </div>
             </div>
-        </div>
+        </RevealGroup>
     )
 }
