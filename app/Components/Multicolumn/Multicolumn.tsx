@@ -19,12 +19,13 @@ type MulticolumnProps = {
     header: string;
     subtitle: string;
     cards: Card[];
+    centered?: boolean;
     backgroundColor?: string;
     dark?: boolean;
     button?: Button;
 };
 
-export default function Multicolumn({ header, subtitle, cards, dark, button }: MulticolumnProps) {
+export default function Multicolumn({ header, subtitle, cards, dark, button, centered = true }: MulticolumnProps) {
     return (
         <RevealGroup>
             <div className={dark ? `${styles.dark} section` : `${styles.light} section`}>
@@ -38,7 +39,7 @@ export default function Multicolumn({ header, subtitle, cards, dark, button }: M
                     <ul className={`${styles.grid} grid3`}>
                         {cards.map(({ icon, title, body, color }, i) => (
                             <Reveal key={i} delay={(i + 1) / 5}>
-                                <li>
+                                <li className={centered ? styles.centered : ''}>
                                     <div className={styles.icon} style={color !== null ? { background: `hsl(${color}, 90%, 85%)`, color: `hsl(${color}, 90%, 20%)` } : {}}>{icon}</div>
                                     <h3>{title}</h3>
                                     <p>{body}</p>

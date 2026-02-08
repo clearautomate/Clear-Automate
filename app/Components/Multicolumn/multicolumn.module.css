@@ -17,6 +17,16 @@
     opacity: 0.85;
 }
 
+.grid li {
+    display: flex;
+    flex-direction: column;
+}
+
+.centered {
+    align-items: center;
+    text-align: center;
+}
+
 .icon {
     width: 3.5rem;
     height: 3.5rem;
