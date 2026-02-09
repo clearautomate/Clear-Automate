@@ -89,7 +89,7 @@ export default function ThreeSteps() {
                                 onClick={scrollToContact}
                                 type="button"
                             >
-                                <p>Book My FREE Real Estate Audit - Only 3 Spots Left!</p>
+                                <p>Book My FREE Audit - Only 3 Spots Left!</p>
                             </button>
                         </div>
                     </Reveal>

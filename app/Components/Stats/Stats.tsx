@@ -7,7 +7,7 @@ export default function Stats() {
         // 🔥 High-Converting Stats (BIG STAT + small text)
         {
             title: "10+",
-            body: "Hours saved per week on average for busy agents and teams",
+            body: "Hours saved per week.",
         },
         {
             title: "8+",

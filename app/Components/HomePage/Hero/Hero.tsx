@@ -102,10 +102,10 @@ export default function Hero() {
                                         }
                                     }}
                                 >
-                                    <p>Book My FREE Real Estate Audit – Only 3 Spots Left!</p>
+                                    <p>Book My FREE Audit – Only 3 Spots Left!</p>
                                 </button>
                             </div>
-                        </Reveal>
+                        </Reveal>x2
 
                         <Reveal delay={0.8}>
                             <div className={styles.reviews}>

@@ -70,7 +70,7 @@ export default function Header() {
                     ))}
                 </ul>
                 <a href="/#contact" className={`button-solid ${styles.contactBtn}`} onClick={handleContactClick}>
-                    Book My FREE Real Estate Audit
+                    Book My FREE Audit
                 </a>
             </div>
         </nav>

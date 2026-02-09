@@ -27,11 +27,7 @@ export default function About() {
                             <Reveal delay={0.4}>
                                 <p className={styles.aboutMe}>
                                     <span>
-                                        Hi, <span className={styles.boldText}>I'm Joel Carmenini</span>, the founder
-                                        of Clear Automate. I started this company after seeing how many real estate
-                                        teams were losing time on manual, repetitive work. With a background in
-                                        software development, I build automation systems that help agents and
-                                        brokerages streamline operations and save hours every week.
+                                        Hi, <span className={styles.boldText}>I'm Joel Carmenini.</span>, I am a pattern finder. When I discover a pattern, I improve it. A few years ago, I noticed a pattern while I was doing small coding jobs for companies, including many real estate firms. Almost every company I worked with had outdated, unorganized systems leading to inefficiency. I know this pattern needed to be disrupted, so I started pitching smarter solutions. Since then, I've helped 8 companies eliminate inefficiencies and create simplified, centralized management systems.
                                     </span>
                                 </p>
                             </Reveal>
